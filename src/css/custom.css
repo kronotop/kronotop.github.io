@@ -15,8 +15,19 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-background-color: #061827;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: #c6ff3a;
+  --ifm-font-weight-semibold: 650;
 }
 
 .landing-button {
   margin: 0.5rem;
+  background-color: #c6ff3a;
+  border-color: #c6ff3a;
+}
+
+.landing-button:hover {
+  background-color: #97c620;
+  border-color: #97c620;
 }
