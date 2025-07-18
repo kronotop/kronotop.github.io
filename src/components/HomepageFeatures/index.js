@@ -28,7 +28,7 @@ const FeatureList = [
     Svg: require('@site/static/img/kronotop-bucket.svg').default,
     description: (
       <>
-        Introduces Bucket — a specialized data structure for storing JSON-like documents. 
+        Introduces Bucket — a specialized data structure for storing JSON-like documents with a familiar query language.
       </>
     ),
   },
