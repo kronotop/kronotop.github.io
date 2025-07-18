@@ -4,32 +4,31 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Built for Horizontal Scalability',
+    Svg: require('@site/static/img/kronotop-cluster.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Kronotop is natively designed for sharding and horizontal scaling, 
+        making it ideal for growing workloads without compromising performance or reliability.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'ACID Transactions',
+    Svg: require('@site/static/img/kronotop-transactions.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Relies on FoundationDB as a transactional metadata and indexing store, offering ACID 
+        guarantees critical for consistency in documents.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Document-Oriented Storage',
+    Svg: require('@site/static/img/kronotop-bucket.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Introduces Bucket — a specialized data structure for storing JSON-like documents. 
       </>
     ),
   },
