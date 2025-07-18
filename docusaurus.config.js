@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Kronotop',
+  title: 'Consistent at Scale',
   tagline: 'Distributed, transactional document database designed for horizontal scalability',
   favicon: 'img/favicon.ico',
 
@@ -91,7 +91,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: 'Docs',
