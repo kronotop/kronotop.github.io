@@ -18,8 +18,7 @@ const FeatureList = [
     Svg: require('@site/static/img/kronotop-transactions.svg').default,
     description: (
       <>
-        Relies on FoundationDB as a transactional metadata and indexing store, offering ACID 
-        guarantees critical for consistency in documents.
+        Uses FoundationDB for metadata and indexing with full ACID guarantees, ensuring consistent documents at scale.
       </>
     ),
   },
