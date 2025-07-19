@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Consistent at Scale',
-  tagline: 'Distributed, transactional document database designed for horizontal scalability',
+  tagline: 'A distributed document database with ACID transactions and horizontal scalability',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
