@@ -48,11 +48,13 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/docs', // Set the base path for the documentation
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        blog: false, // Disable the blog feature
         theme: {
           customCss: './src/css/custom.css',
         },
