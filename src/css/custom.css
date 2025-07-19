@@ -27,6 +27,7 @@
   --ifm-font-family-base: 'Open Sans', sans-serif;
   --ifm-font-family-monospace: 'Source Code Pro', monospace;
   --ifm-code-font-family: 'Source Code Pro', monospace;
+  --ifm-navbar-sidebar-background-color: #FFFFFF;
 }
 
 .landing-button {
@@ -40,11 +41,14 @@
   border-color: #97c620;
 }
 
+.navbar__toggle {
+  color: #ffffff;
+}
 
-.open-sans-kronotop {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300 800;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+.theme-layout-navbar-sidebar-panel {
+  background-color: #ffffff;
+}
+
+.navbar-sidebar__close {
+  color: #ffffff!;
 }
