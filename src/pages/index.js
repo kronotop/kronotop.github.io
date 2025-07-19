@@ -37,7 +37,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} | Consistent at Scale`}
+      title="Kronotop"
       description="Kronotop is a distributed, transactional document database designed for horizontal scalability">
       <HomepageHeader />
       <main>

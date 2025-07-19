@@ -28,7 +28,10 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kronotop', // Usually your GitHub org/user name.
-  projectName: 'kronotop', // Usually your repo name.
+  projectName: 'kronotop-docs', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // The branch that GitHub pages will deploy from.
+
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -132,6 +135,14 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    scripts: [
+      {
+        src: "https://static.cloudflareinsights.com/beacon.min.js",
+        defer: true,
+        'data-cf-beacon':'{"token": "39e2943eac5e4801b148339a8b920cd8"}',
+    }
+  ]
 };
+
 
 export default config;
