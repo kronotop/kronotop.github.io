@@ -3,7 +3,7 @@ sidebar_position: 2
 description: How to manage Volumes
 ---
 
-# Volume management
+# Volume Management
 
 ## Introduction
 

@@ -1,3 +1,8 @@
+---
+sidebar_position: 7
+description: Learn why Kronotop Runs on the Java Platform
+---
+
 # Built on the JVM
 
 **Why Kronotop Runs on the Java Platform**

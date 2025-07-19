@@ -1,3 +1,8 @@
+---
+sidebar_position: 8
+description: How to get support and join the community
+---
+
 # Support
 
 Kronotop has several channels for support:

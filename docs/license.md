@@ -1,3 +1,8 @@
+---
+sidebar_position: 9
+description: The reasons behind license choices
+---
+
 # License
 
 ## Apache License 2.0
