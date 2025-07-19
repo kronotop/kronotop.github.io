@@ -95,7 +95,7 @@ const config = {
         style: 'light',
         links: [
           {
-            title: 'Community',
+            title: 'Support',
             items: [
               {
                 label: 'Discord',
@@ -105,6 +105,14 @@ const config = {
                 label: 'X',
                 href: 'https://x.com/kronotopdata',
               },
+              {
+                label: 'GitHub Discussions',
+                href: 'https://github.com/kronotop/kronotop/discussions'
+              },
+              {
+                label: 'GitHub Issues',
+                href: 'https://github.com/kronotop/kronotop/issues'
+              }
             ],
           },
           {
