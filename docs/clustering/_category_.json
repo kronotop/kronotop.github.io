@@ -1,6 +1,6 @@
 {
-  "label": "Storage Engine",
-  "position": 8,
+  "label": "Clustering",
+  "position": 7,
   "link": {
     "type": "generated-index"
   }

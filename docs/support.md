@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 10
 description: How to get support and join the community
 ---
 
