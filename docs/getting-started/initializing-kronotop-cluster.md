@@ -91,5 +91,5 @@ OK
 "Hello"
 ```
 
-All in-memory data will be persisted and replicated by the storage engine. See [Storage Engine](docs/volume/volume.md) section
+All in-memory data will be persisted and replicated by the storage engine. See Storage Engine section
 for the details.
