@@ -11,7 +11,7 @@ Kronotop uses a custom-built storage engine named Volume. As the core persistenc
 document store, Volume is responsible for reliably storing all document data on local disks and managing data replication 
 between cluster members.
 
-See the [volume](volume.md) documentation for details of the storage engine design and implementation.
+See the [volume](/docs/volume/how-kronotop-stores-data) documentation for details of the storage engine design and implementation.
 
 ## Commands
 
@@ -28,7 +28,7 @@ This connects to the management port with RESP3 support enabled (-3), allowing y
 
 Volume admin commands are designed as a subcommand of `VOLUME.ADMIN` command
 
-### LIST
+### VOLUME.ADMIN LIST
 
 `VOLUME.ADMIN LIST`  command returns a list of all volumes currently **opened and managed** by the cluster member you are connected to.
 
@@ -61,7 +61,7 @@ VOLUME.ADMIN LIST
 14) bucket-shard-5
 ```
 
-### DESCRIBE
+### VOLUME.ADMIN DESCRIBE
 
 `VOLUME.ADMIN DESCRIBE` command provides detailed information about the internal state and layout of a specific volume (shard). 
 This includes storage path, status, segment size, and statistics per segment.
@@ -115,7 +115,7 @@ It returns an error if there is no volume given name or the name is invalid:
 (error) ERR Volume: 'bucket-shard-100' is not open
 ```
 
-### SET-STATUS
+### VOLUME.ADMIN SET-STATUS
 
 `VOLUME-ADMIN SET-STATUS` command changes the status of the specified volume.
 
@@ -154,7 +154,7 @@ If the volume does not exist or is not open:
 (error) ERR Volume: 'bucket-shard-100' is not open
 ```
 
-### REPLICATIONS
+### VOLUME.ADMIN REPLICATIONS
 
 `VOLUME.ADMIN REPLICATIONS` command returns detailed metadata for all active or historical replication sessions 
 involving the current node. It is primarily used for debugging and monitoring the state of replication pipelines.
@@ -197,7 +197,7 @@ The keys of the root hash are the replication slot ids. Each entry corresponds t
 
 This command is useful for tracking the progress and health of replication sessions across distributed nodes.
 
-### VACUUM
+### VOLUME.ADMIN VACUUM
 
 `VOLUME.ADMIN VACUUM` command initiates a manual vacuum operation on the specified volume (shard). It is used to reclaim 
 disk space by removing segments with excessive obsolete (garbage) data.
@@ -254,7 +254,7 @@ It can be safely run while the volume is online and serving read/write traffic.
 
 To assess whether vacuuming is needed, use the [VOLUME.ADMIN DESCRIBE](#describe) command and check `garbage_ratio` values per segment.
 
-### STOP-VACUUM
+### VOLUME.ADMIN STOP-VACUUM
 
 `VOLUME.ADMIN STOP VACUUM` command stops a running vacuum command on the specified volume.
 
@@ -291,7 +291,7 @@ If the specified volume is not open or does not exist:
 (error) ERR Volume: 'bucket-shard-110' is not open
 ```
 
-### CLEANUP-ORPHAN-FILES
+### VOLUME.ADMIN CLEANUP-ORPHAN-FILES
 
 The `VOLUME.ADMIN CLEANUP-ORPHAN-FILES` command performs a manual cleanup of orphaned files on the specified volume (shard). 
 Orphan files are leftover segment or metadata files that are no longer tracked by the volume's internal state—typically 
@@ -337,7 +337,7 @@ If the specified volume is not open or does not exist:
 * This operation does not touch valid segments, even if they appear unused—only unreferenced files are deleted.
 * Use in conjunction with `VOLUME.ADMIN DESCRIBE` and `ls -l` on the data directory to verify disk state before/after cleanup if needed.
 
-### MARK-STALE-PREFIXES
+### VOLUME.ADMIN MARK-STALE-PREFIXES
 
 `VOLUME.ADMIN MARK-STALE-PREFIXES` command starts a background task that scans the metadata of all volumes to identify and 
 mark stale key prefixes.
