@@ -28,7 +28,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kronotop', // Usually your GitHub org/user name.
-  projectName: 'kronotop.com', // Usually your repo name.
+  projectName: 'kronotop.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages', // The branch that GitHub pages will deploy from.
 
   trailingSlash: false,
