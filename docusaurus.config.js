@@ -126,6 +126,10 @@ const config = {
                 href: 'https://github.com/kronotop/kronotop',
               },
               {
+                label: 'FAQ',
+                href: '/docs/faq',
+              },
+              {
                 label: 'License',
                 to: '/docs/license',
               },
