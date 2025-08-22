@@ -101,6 +101,10 @@ const config = {
             title: 'Support',
             items: [
               {
+                label: 'GitHub',
+                href: 'https://github.com/kronotop/kronotop',
+              },
+              {
                 label: 'Discord',
                 href: 'https://discord.gg/Nyy4Afpr',
               },
@@ -109,11 +113,11 @@ const config = {
                 href: 'https://x.com/kronotopdata',
               },
               {
-                label: 'GitHub Discussions',
+                label: 'Discussions',
                 href: 'https://github.com/kronotop/kronotop/discussions'
               },
               {
-                label: 'GitHub Issues',
+                label: 'Bug Tracker',
                 href: 'https://github.com/kronotop/kronotop/issues'
               }
             ],
@@ -121,10 +125,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/kronotop/kronotop',
-              },
               {
                 label: 'FAQ',
                 href: '/docs/faq',
@@ -137,6 +137,10 @@ const config = {
                 label: 'Philosophy',
                 href: '/docs/philosophy',
               },
+              {
+                label: 'Vision',
+                href: '/docs/vision',
+              }
             ],
           },
         ],

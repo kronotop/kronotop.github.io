@@ -5,15 +5,6 @@ description: Philosophy
 
 # Philosophy
 
-While I am currently the sole developer of Kronotop, I use “we” throughout this document in the spirit of open-source 
-collaboration — to acknowledge the ideas I’ve drawn from, the community I hope to build, and the shared effort that great 
-systems are always built upon.
-
-**Burak**  
-*(author, and the current maintainer of Kronotop)*
-
----
-
 While designing and developing Kronotop, we never lost sight of the following quotes. They remind us that engineering is
 not just about code — it is about clarity, respect for truth, and the courage to build what has never been built.
 
@@ -31,14 +22,12 @@ not just about code — it is about clarity, respect for truth, and the courage 
 
 ---
 
-
 > What Des-Cartes [sic] did was a good step. You have added much several ways, & especially in taking the colours of thin
 > plates into philosophical consideration. If I have seen further it is by standing on the shoulders of Giants.
 > 
 > **— Isaac Newton, Letter to Robert Hooke, 5 February 1675.**
 
 ---
-
 
 > It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as
 > few as possible without having to surrender the adequate representation of a single datum of experience.
@@ -52,9 +41,3 @@ not just about code — it is about clarity, respect for truth, and the courage 
 > What I cannot create, I do not understand.
 > 
 > **— Richard Feynman**
-
----
-
-> Simple things should be simple, complex things should be possible.
-> 
-> **― Alan Kay**
